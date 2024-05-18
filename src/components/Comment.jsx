@@ -12,7 +12,7 @@ export function Comment() {
             <div className={styles.authorAndTime}>
               <strong>Jones Kleber</strong>
               <time title="17 de Maio às 08:06h" dateTime="2024-05-17 08:06:10">
-                Cerca há 1h atrás
+                Cerca há 1h atrás.
               </time>
             </div>
 
