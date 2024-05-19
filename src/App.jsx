@@ -5,6 +5,70 @@ import { Sidebar } from "./components/Sidebar";
 import styles from "./App.module.css";
 import "./global.css";
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarURL: "https://github.com/joneskleber.png",
+      name: "Jones Kleber",
+      role: "CEO @Visão On",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galera 👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+      },
+      {
+        type: "link",
+        content: "jane.design/doctorcare",
+      },
+    ],
+    publishedAt: new Date("2024-05-17 08:06:10"),
+  },
+  {
+    id: 2,
+    author: {
+      avatarURL: "https://github.com/diego3g.png",
+      name: "Diego Fernandes",
+      role: "CTO @Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "sdafasdf👋" },
+      {
+        type: "paragraph",
+        content: "sdfasd 🚀",
+      },
+      {
+        type: "link",
+        content: "jane.design/doctorcare",
+      },
+    ],
+    publishedAt: new Date("2024-05-10 08:06:10"),
+  },
+  {
+    id: 3,
+    author: {
+      avatarURL: "https://github.com/diego3g.png",
+      name: "Diego Fernandes",
+      role: "CTO @Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "👋" },
+      {
+        type: "paragraph",
+        content: "Acadcsaf 🚀",
+      },
+      {
+        type: "link",
+        content: "jane.design/antonella",
+      },
+    ],
+    publishedAt: new Date("2024-05-19 08:06:10"),
+  },
+];
+
 export function App() {
   return (
     <div>
@@ -16,12 +80,16 @@ export function App() {
 
         {/* POST */}
         <main>
-          <Post
-            author="Jones Kleber"
-            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque autem aperiam doloribus minima. Cupiditate explicabo vel quidem. Incidunt vero dolor molestias veniam non consequuntur earum voluptate, soluta praesentium cupiditate nam?"
-          />
-
-          <Post author="Antonella" content="Post muito legal" />
+          {posts.map((post) => {
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </div>
