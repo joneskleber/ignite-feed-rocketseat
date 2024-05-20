@@ -57,14 +57,14 @@ export function Post({ author, publishedAt, content }) {
       <div className={styles.content}>
         {content.map((line) => {
           return (
-            <>
+            <div key={line.content}>
               {line.type === "paragraph" && <p>{line.content}</p>}
               {line.type === "link" && (
                 <p>
                   <a href="#">{line.content} </a>
                 </p>
               )}
-            </>
+            </div>
           );
         })}
         <p>
@@ -91,7 +91,7 @@ export function Post({ author, publishedAt, content }) {
 
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment content={comment} />;
+          return <Comment key={comment} content={comment} />;
         })}
       </div>
     </article>
