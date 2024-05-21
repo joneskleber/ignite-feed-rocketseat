@@ -1,9 +1,31 @@
-# React + Vite
+## Trilha Ignite - Projeto 01 - Ignite Feed With JavaScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Iniciando com React
 
-Currently, two official plugins are available:
+npm create vite@latest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# ignite-feed-rocketseat
+## Structure
+
+## Technologies
+
+This project was developed with the following technologies:
+
+- [Reactjs](https://reactjs.org)
+- [Vite](https://vitejs.dev/)
+
+## Libraries
+
+- date-fns
+- phosphor-react
+
+## Contributors
+
+[![](https://contrib.rocks/image?repo=joneskleber/joneskleber)](https://github.com/joneskleber)
+
+## Educator
+
+[![](https://contrib.rocks/image?repo=diego3g/diego3g)](https://github.com/diego3g)</br><strong>Diego Fernandes</strong><br/>CTO | @Rocketseat
+
+## License
+
+This project is under license from [Rocketseat](https://www.rocketseat.com.br/).

@@ -47,7 +47,6 @@ export function Post({ author, publishedAt, content }) {
     setComments(commentsWithoutDeletedComment);
   }
 
-
   const isCommentEmpty = newCommentText.length === 0;
 
   return (
@@ -103,7 +102,7 @@ export function Post({ author, publishedAt, content }) {
         />
 
         <footer>
-          <button type="submit" disabled={isCommentEmpty}>
+          <button type="submit" disabled={false}>
             Publicar
           </button>
         </footer>
